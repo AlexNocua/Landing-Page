@@ -118,6 +118,10 @@ section {
     padding: 82px 0;
 }
 
+.section-bg {
+    background-color: #fff;
+}
+
 .about .img-1 {
     color: blue;
     background: linear-gradient(120deg, rgb(255, 255, 255), rgb(78, 76, 107, 0.2), rgba(255, 255, 255))
@@ -144,8 +148,10 @@ section {
     font-weight: bold;
     text-transform: uppercase;
     color: rgba(0, 0, 26, 1);
-    height: 0; /* Ajusta según sea necesario */
-    line-height: 80px; /* Igual a la altura de la etiqueta */
+    height: 0;
+    /* Ajusta según sea necesario */
+    line-height: 80px;
+    /* Igual a la altura de la etiqueta */
 }
 
 .about img {
@@ -160,7 +166,7 @@ section {
 
 
 .about .member {
-    
+
     padding: 20 px;
     border-radius: 5px;
     background: none;
@@ -219,6 +225,28 @@ section {
 .about .member a:hover {
     background: #fff;
     color: #0D6EFD;
+}
+
+/*Services*/
+
+.services .icon-box {
+    padding: 33px 25px;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.services .col-lg-3{
+    padding-top: 2%;
+}
+
+.services .icon-box:hover {
+    box-shadow: 0px 15px 30px rgb(77 86 222/30%);
+}
+
+.services .icon-box .icon {
+    color:orange;
+    font-size: 43px;
 }
 
 /* .card {
