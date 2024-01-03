@@ -94,7 +94,7 @@ a.nav-link:hover {
 
 /*Agregacion de actividades y creacion de una clase fixed manipulada por JS*/
 .navbar-fixed {
-    background-color: rgba(252, 103, 49, 1);
+    background-color: rgb(28, 10, 75);
     padding-top: 0;
     padding-bottom: 0;
     transition: all 0.6s;
@@ -115,7 +115,7 @@ a.nav-link:hover {
 
 /*Estilos de conoceme*/
 section {
-    padding: 82px 0;
+    padding: 20px 0;
 }
 
 .section-bg {
@@ -123,12 +123,12 @@ section {
 }
 
 .about .img-1 {
-    color: blue;
+   
     background: linear-gradient(120deg, rgb(255, 255, 255), rgb(78, 76, 107, 0.2), rgba(255, 255, 255))
 }
 
 .about .img-2 {
-    color: blue;
+    
     background: linear-gradient(120deg, rgb(255, 255, 255), rgba(78, 76, 107, 0.2), rgb(255, 255, 255))
 }
 
@@ -236,7 +236,8 @@ section {
     cursor: pointer;
     transition: 0.5s;
 }
-.services .col-lg-3{
+
+.services .col-lg-3 {
     padding-top: 2%;
 }
 
@@ -244,10 +245,32 @@ section {
     box-shadow: 0px 15px 30px rgb(77 86 222/30%);
 }
 
-.services .icon-box .icon {
-    color:orange;
+.services .icon-box .icon i {
+    color: orange;
     font-size: 43px;
 }
+
+.services .icon-box h4 {
+    color: #0D6EFD;
+}
+
+.services img {
+    margin-bottom: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.subicons{
+    height: 30px;
+    width: 30px;
+}
+.services .row .img-arr{
+    color:aqua;
+    height: 70px;
+    width: 70px;
+}
+
+
 
 /* .card {
     position: relative;
