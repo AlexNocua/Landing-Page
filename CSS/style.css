@@ -52,7 +52,7 @@ header {
 
 .navbar {
     background: linear-gradient(50deg, rgba(0, 0, 26, 1), rgba(78, 76, 107, 1));
-    opacity: 90%;
+    opacity: 85%;
 }
 
 /**/
@@ -88,8 +88,8 @@ a.nav-link:hover {
 /*a.btn... si quisiera que se ajustara en todas las etiquetas que tengan la clase custom*/
 .btn-custom:hover {
     color: white;
-    background: rgba(253, 29, 29, 1);
-    border: 1.5px rgba(253, 29, 29, 1);
+    background: #0D6EFD;
+    border: 1.5px #fff;
 }
 
 /*Agregacion de actividades y creacion de una clase fixed manipulada por JS*/
@@ -123,12 +123,12 @@ section {
 }
 
 .about .img-1 {
-   
+
     background: linear-gradient(120deg, rgb(255, 255, 255), rgb(78, 76, 107, 0.2), rgba(255, 255, 255))
 }
 
 .about .img-2 {
-    
+
     background: linear-gradient(120deg, rgb(255, 255, 255), rgba(78, 76, 107, 0.2), rgb(255, 255, 255))
 }
 
@@ -242,6 +242,7 @@ section {
 }
 
 .services .icon-box:hover {
+    transition: all 0.2s;
     box-shadow: 0px 15px 30px rgb(77 86 222/30%);
 }
 
@@ -254,23 +255,156 @@ section {
     color: #0D6EFD;
 }
 
+
+.services .icon-box p {
+    font-size: 14px;
+}
+
+.services .col-lg-3 .col-botton {
+    transition: 0.2s;
+}
+
+.services .col-lg-3 .col-botton .btn {
+    opacity: 0;
+    font-size: 10px;
+    color: #0D6EFD;
+    background: #fff;
+    transition: all 0.3s;
+
+}
+
+#ICONBOX-TRANSITION:hover #BTN-TRASITION {
+    opacity: 1;
+}
+
+#ICONBOX-TRANSITION:hover #COLBTN-TRANSITION{
+    padding: 10px;
+}
+
+#ICONBOX-TRANSITION:hover #IMG-TRASITION{
+    padding-bottom: 10px;
+    transform: scale(1.5);
+}
+.services .col-lg-3 .col-botton .btn:hover {
+    background: #0D6EFD;
+    color: #fff;
+    font-size: 13px;
+}
+
 .services img {
     margin-bottom: 5px;
     width: 30px;
     height: 30px;
 }
 
-.subicons{
+.subicons {
     height: 30px;
     width: 30px;
 }
-.services .row .img-arr{
-    color:aqua;
-    height: 70px;
-    width: 70px;
+
+.services .row .img-arr {
+    color: aqua;
+    height: 100px;
+    width: 100px;
+    transition: all 0.3s;
+}
+
+.portfolio .portfolio-container {
+    align-items: center;
+}
+
+.portfolio img {
+    height: 150px;
+    width: 150px;
+}
+
+/*portafolio llamado por ID*/
+.portfolio #portfolio-filters li {
+    cursor: pointer;
+    list-style: none;
+    margin: 10px 5px;
+    /*Abajo-arriba lados*/
+    font-weight: 500;
+    color: #0D6EFD;
+    transition: all 0.7s;
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+
+.portfolio #portfolio-filters li:hover,
+.portfolio #portfolio-filters li.filter-active {
+    background: #0D6EFD;
+    color: #fff;
+}
+
+.portfolio ul {
+    padding-left: 0px;
+}
+
+.portfolio .portfolio-item .portfolio-img img {
+    transition: all 0.6s;
+}
+
+.portfolio .portfolio-item:hover .portfolio-img img {
+    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+    transform: scale(1.5);
+}
+
+.portfolio .portfolio-item .portfolio-img {
+    /*esta es para que las etiquetas de la imajen cuando se relaice el zoom no resalgan*/
+    overflow: hidden;
+}
+
+.portfolio .portfolio-item .portfolio-info {
+    opacity: 0.5;
+    position: absolute;
+    left: 12px;
+    bottom: 0;
+    right: 12px;
+    transition: all 0.3s;
+    background: rgba(0 0 26/ 100%);
+    padding: 10px 15px;
 }
 
 
+
+.portfolio .portfolio-item .portfolio-info h4 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.portfolio .portfolio-item .portfolio-info p {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+.portfolio .portfolio-item .portfolio-info .preview-link,
+.portfolio .portfolio-item .portfolio-info .details-link {
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+    font-size: 30px;
+    top: calc(50%-28);
+    color: #fff;
+    transition: 0.4s;
+}
+
+.portfolio .portfolio-item .portfolio-info .details-link {
+    right: 10px;
+}
+
+.portfolio .portfolio-item .portfolio-info:hover {
+    opacity: 1;
+}
+
+.portfolio .portfolio-item .portfolio-info .preview-link:hover,
+.portfolio .portfolio-item .portfolio-info .details-link:hover {
+    color: #000000;
+}
 
 /* .card {
     position: relative;
