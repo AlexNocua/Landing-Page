@@ -3,10 +3,10 @@ $(window).on("scroll", function () {
 
     if ($(".navbar").offset().top > 40) {
         $(".navbar").addClass("navbar-fixed");
-
+        $(".go-top").show(); //Mostrar show
     } else {
         $("navbar").removeClass("navbar-fixed");
-
+        $(".go-top").hide(); //ocultar
     }
 
     if ($(".navbar").offset().top == 0) {
@@ -36,3 +36,14 @@ $(document).ready(function () {
     });
 });
 
+//Inicializar plugin magnifigpopup
+
+
+$('.popup-image').magnificPopup({
+    type: 'image',
+    colseOnContentClick: true,
+    gallery: {
+        enabled: true,
+        navigateByImgClick: true
+    }
+});
