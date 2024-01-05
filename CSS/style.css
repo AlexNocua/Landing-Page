@@ -384,7 +384,7 @@ section {
 
 .portfolio .portfolio-item .portfolio-info .preview-link,
 .portfolio .portfolio-item .portfolio-info .details-link {
-    position: absolute;
+    
     right: 40px;
     bottom: 0;
     font-size: 30px;
