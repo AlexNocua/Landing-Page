@@ -37,7 +37,7 @@ $(document).ready(function () {
 });
 
 //Inicializar plugin magnifigpopup
-
+//modificacion
 
 $('.popup-image').magnificPopup({
     type: 'image',
