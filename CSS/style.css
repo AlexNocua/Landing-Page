@@ -94,18 +94,21 @@ a.nav-link:hover {
 
 /*Agregacion de actividades y creacion de una clase fixed manipulada por JS*/
 .navbar-fixed {
+    justify-content: center;
+    align-items: center;
     background-color: rgb(28, 10, 75);
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
     transition: all 0.6s;
     box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
 }
 
 /*Esto para generar de nuevo un evento que me deje de manera exacta como estaba si vuelvo al inicio*/
 .navbar-fixedremove {
+    color: #fff;
     padding-top: 8px;
     transition: all 0.6s;
-    background: none;
+    background:linear-gradient(50deg, rgba(0, 0, 26, 1), rgba(78, 76, 107, 1));
     box-shadow: none;
 }
 
@@ -191,22 +194,26 @@ section {
     color: white;
 }
 
+.about .member .imgc{
+    padding-left: 10px;
+    padding-right: 10px;
+}
 .about .member .pic {
-    overflow: hidden;
-    width: 180px;
+    width: 220px;
     border-radius: 10%;
     padding: 10px 10px 10px 10px;
 }
 
 .about .member span {
+    
     display: block;
     font-size: 15px;
-    padding-bottom: 10px;
-    font-weight: 600;
+    padding-bottom: 0px;
+    font-weight: 800;
 }
 
 .about .member p {
-    margin: 10px 0 0 0;
+    margin: 5px 0 0 0;
     font-size: 14px;
 }
 
@@ -343,12 +350,13 @@ section {
 
 .portfolio .portfolio-item .portfolio-img img {
     transition: all 0.6s;
+    width: 200px;
 }
 
 .portfolio .portfolio-item:hover .portfolio-img img {
     margin-top: 20px;
     padding: 10px 10px 10px 10px;
-    transform: scale(1.5);
+    transform: scale(1.9);
 }
 
 .portfolio .portfolio-item .portfolio-img {
@@ -357,7 +365,7 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-info {
-    opacity: 0.5;
+    opacity: 0.7;
     position: absolute;
     left: 12px;
     bottom: 0;
@@ -365,6 +373,7 @@ section {
     transition: all 0.3s;
     background: rgba(0 0 26/ 100%);
     padding: 10px 15px;
+    
 }
 
 
@@ -433,7 +442,9 @@ footer .social {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    margin-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  
 }
 
 footer .social svg{
@@ -457,7 +468,46 @@ footer .social svg{
     transform: rotate(-90deg);
 }
 
-/*Modificacion*/
+/*barra de navegacion para moviles*/
+
+.navbar-toggler{
+    padding: .10rem .45rem;
+    border: 1px solid #fff;
+
+}
+.navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler i.bi-list{
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+@media (max-width:992px){ /*aplicar solo a pantallas menores a 992px*/
+    .navbar-collapse{
+        padding-bottom: 20px;
+    }
+    .wave{
+        padding-top: 6rem;
+    }
+}
+
+@media (max-width:500px){ /*aplicar solo a pantallas menores a 992px*/
+    .text-center-xs{
+        display: list-item;
+
+        text-align: center;
+       
+    }
+    .text-center-xs img{
+      
+        width: 426px;
+       
+    }
+}
+
 /* .card {
     position: relative;
     background: rgb(248, 248, 248);
