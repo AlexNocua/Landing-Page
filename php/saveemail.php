@@ -19,7 +19,7 @@ $message .= "Mensaje enviado el: " . date('d,m,Y', time());
 $para = 'alex.nocua@alunos.ifsuldeminas.edu.br';
 $asunto = 'Comentarios de Landing Page';
 
-mail($para, $asunto, utf8_decode($message), $header);
+@mail($para, $asunto, utf8_decode($message), $header);
 
 header("Location: index.html");
 ?>
