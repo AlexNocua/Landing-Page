@@ -21,6 +21,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <!--fixed-top es una clase de bootstrap que mermite que el mismo menu me ajuste de manera automatica -->
         <div class="container">
+
             <a class="navbar-brand text-white" href="#">
                 <div class="col-12 col-sm-6 text-center">
                     <p class="fs-5 fw-bold mb-0">Curriculo Virtual</p>
@@ -41,10 +42,13 @@
                         <a class="nav-link" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Conoce</a>
+                        <a class="nav-link" href="#about">¡Conoceme!</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portafolio</a>
+                        <a class="nav-link" href="#services">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Mas información</a>
                     </li>
                 </ul>
                 <a class="btn-custom ms-lg-auto" href="#contacto">Contacto</a>
@@ -58,6 +62,12 @@
     <header class="wave" id="inicio">
         <div class="img-fluid ">
             <div class="container"> <!--Contenedor-->
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
                 <div class="row "> <!--Fila-->
                     <div class="col-md-4 text-white mt-0 ms-1 text-center-xs" style="z-index: 1">
                         <h1 class="fw-bold">Repositorio Virtual</h1>
@@ -88,13 +98,11 @@
         <div class="container">
             <div class="row">
 
-                <div class="col img-1 "><img src="IMG/EspiIZ.png" class="rounded float-end"></div>
                 <div class="col section-title">
                     <h2 class="">
                         ¡Conoceme!
                     </h2>
                 </div>
-                <div class="col img-2"><img src="IMG/EspiDR.png" class="rounded float-start"></div>
             </div>
             <div class="row mt-4"><!--Fila-->
                 <div class="col-lg-6 mt-4 mt-lg-0"><!--Columna-->
@@ -156,7 +164,7 @@
                                 <strong>Idiomas: </strong> Español <span
                                     style="color: rgb(255, 196, 0); display:inline;">Col</span> (Nativo) y Portugues
                                 <span style="color: rgb(32, 130, 5); display:inline;">Br</span>
-                                (A1 + Experiencia de residencia de 5 meses en Brasil).
+                                (A1 + Experiencia de residencia de 5 meses en Brasil). <br>
                                 <strong>Visas:</strong> Visa MERCOSUL Brasil. <br>
                                 <Strong>Hobbies: </Strong>Astronomía, deporte, escritura, lectura, música y demás. <br>
                                 <Strong>Fortalezas y aptitudes:</Strong> Trabajo en equipo, adaptabilidad, resolución de
@@ -397,6 +405,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
+                    <p class="text-center"><strong>Municipio de recidencia:</strong></p>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63562.547313299256!2d-73.82828645!3d5.3157465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e40386e4f343daf%3A0x763be68275a90916!2sVilla%20de%20San%20Diego%20de%20Ubat%C3%A9%2C%20Cundinamarca!5e0!3m2!1ses-419!2sco!4v1704426540423!5m2!1ses-419!2sco"
                         width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
@@ -404,21 +413,25 @@
                     </iframe>
                 </div>
                 <div class="col-md-6 mt-3 mt-md-0">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tu nombre">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tu nombre">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Comentarios</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tu nombre">
-                    </div>
-                    <div class="d-grid">
-                        <button class="btn btn-primary" type="button">Enviar</button>
-                    </div>
+                    <!--programacion en php-->
+                    <form action="php/saveemail.php" method="post">
+                        <div class="mb-3">
+                            <label for="Nome" class="form-label"><strong>Nombre</strong></label>
+                            <input type="text" name="name" class="form-control" id="Nome" placeholder="Tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label"><strong>Correo electronico</strong></label>
+                            <input type="text" name="email" class="form-control" id="correo" placeholder="tucorreo@...com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Comentarios" class="form-label"><strong>Comentarios</strong></label>
+                            <textarea class="form-control" name="coments" id="Comentarios" rows="3" placeholder="Coméntame una idea, opinión, sugerencia…"></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-primary" type="submit">Enviar</button>
+                        </div>
+                    </form>
+
                 </div>
             </div>
         </div>
@@ -426,34 +439,51 @@
     </section>
 
     <!--footer-->
-    <footer>
+    <footer id="IDbarraFinal" class="Barrafinal ">
         <div class="container">
+
+            <div class="cube "></div>
+            <div class="cube "></div>
+            <div class="cube "></div>
+            <div class="cube "></div>
+            <div class="cube "></div>
             <div class="row">
                 <div class="col mb-3">
-                    <h4 class="mb-3">Conoceme</h4>
+                    <h4 class="mb-3"><strong>Conoceme</strong></h4>
                     <p>
-                        soy alex tatata
+                        <strong>Alex Nocua</strong>, estudiante de ingeniería de sistemas de la Universidad de
+                        Cundinamarca. <br>
+                        Ubaté <strong><span style="color: rgb(255, 196, 0); display:inline;">Colombia. <img id=""
+                                    src="IMG/colombia.png" alt="" class="img-arr img-fluid"></span></strong>
                     </p>
                 </div>
                 <div class="col mb-3">
-                    <h4 class="mb-3">Menu</h4>
+                    <h4 class="mb-3"><strong>Menu</strong></h4>
                     <ul class="list-unstyled">
-                        <li><a href="#about">Conoceme</a></li>
-                        <li><a href="#services">Proyectos</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#about"><img id="" src="IMG/conoceme.png" alt=""
+                                    class="img-arr img-fluid">¡Conoceme!</a></li>
+                        <li><a href="#services"><img id="" src="IMG/proyecto.png" alt=""
+                                    class="img-arr img-fluid">Proyectos</a></li>
+                        <li><a href="#contacto"><img id="" src="IMG/comunicar.png" alt=""
+                                    class="img-arr img-fluid">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="col mb-3">
-                    <h4 class="mb-3">Proyectos</h4>
+                    <h4 class="mb-3"><strong>Proyectos</strong></h4>
                     <ul class="list-unstyled">
-                        <li><a href="#IA">Inteligencia Artificial y visión computacional</a></li>
-                        <li><a href="#aplicaciones">Aplicaciones</a></li>
-                        <li><a href="#frontend">Frontend</a></li>
-                        <li><a href="#backend">Backend</a></li>
+                        <li><img id="IMG-TRASITION" src="IMG/ojo.png" alt="" class="img-arr img-fluid"><a
+                                href="#IA">Inteligencia Artificial y visión computacional</a>
+                        </li>
+                        <li><img id="IMG-TRASITION" src="IMG/desarrollo-de-aplicaciones.png" alt=""
+                                class="img-arr img-fluid"><a href="#aplicaciones">Aplicaciones</a></li>
+                        <li><img id="IMG-TRASITION" src="IMG/front.png" alt="" class="img-arr img-fluid"><a
+                                href="#frontend">Frontend</a></li>
+                        <li><img id="IMG-TRASITION" src="IMG/backend.png" alt="" class="img-arr img-fluid"><a
+                                href="#backend">Backend</a></li>
                     </ul>
                 </div>
                 <div class="col mb-3">
-                    <h4 class="mb-3">Redes sociales</h4>
+                    <h4 class="mb-3"><strong>Redes sociales</strong></h4>
                     <div class="social">
                         <a href="https://github.com/AlexNocua" class="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -475,10 +505,13 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div id="copirigt" class="row">
                 <div class="col-12 text-center my-3"><!--my espacio arriba abajo-->
-                    Pagina creada y diseñada por el autor <a href="#about">Alex Nocua</a> - Todos los derechos
-                    reservados
+                    <p>Pagina creada y diseñada por el autor <a href="#about"><strong>Alex Nocua</strong></a> - Todos
+                        los derechos
+                        reservados
+                        <br>Versión beta
+                    </p>
                 </div>
             </div>
         </div>
@@ -515,9 +548,12 @@
     <!-- Magnific Popup core JS file -->
     <script src="JS/jquery.magnific-popup.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js " integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0 " crossorigin="anonymous "></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js " integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=" anonymous "></script>
-        <!--isotope un plugin de jQuery que nos permite implementar diseños inteligentes y dinámicos que no se pueden implementar únicamente con CSS.-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0 "
+        crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js "
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=" anonymous "></script>
+    <!--isotope un plugin de jQuery que nos permite implementar diseños inteligentes y dinámicos que no se pueden implementar únicamente con CSS.-->
 
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js "></script>
     <script src="JS/jquery.magnific-popup.min.js "></script>
