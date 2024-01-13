@@ -441,15 +441,15 @@ section {
     font-size: 14px;
     background: #fff;
     margin-top: 1px;
-    
-    
+
+
 }
 
 .services .col-lg-3 .accordion .card .card-body a {
     transition: all 0.7s;
     color: #000000;
     width: 100%;
-    
+
 
 }
 
@@ -682,6 +682,18 @@ footer {
 
 .contacto {
     background: linear-gradient(0deg, rgb(255, 255, 255), rgba(123, 209, 255, 0.1), rgba(255, 255, 255));
+}
+
+.contacto .d-grid .btn {
+    background: #393939;
+}
+
+.contacto .d-grid {
+    font-size: 12px;
+}
+
+.contacto .d-grid i {
+    color: #00a3f4
 }
 
 .Barrafinal {
