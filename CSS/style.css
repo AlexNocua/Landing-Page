@@ -55,7 +55,81 @@ header {
     opacity: 85%;
 }
 
-/**/
+/*Curriculo Virtual*/
+.curriculoV {
+    background: linear-gradient(0deg, rgb(255, 255, 255), rgba(123, 209, 255, 0.2), rgba(255, 255, 255));
+}
+
+.curriculoV .col-img {
+    overflow: hidden;
+    /* Evita que la imagen se salga del contenedor */
+    transition: all 0.7s;
+}
+
+.curriculoV .col-img p {
+    z-index: 1000;
+    color: #000000;
+}
+
+
+
+.curriculoV .col-img img {
+    height: 40%;
+    width: 40%;
+    opacity: 0.2;
+    transition: all 0.7s;
+
+}
+
+
+
+
+
+.curriculoV .col-img .btn {
+    background: linear-gradient(50deg, rgba(0, 0, 26, 1), rgba(78, 76, 107, 1));
+    border: none;
+    font-size: 14px;
+    transition: all 0.8s;
+}
+
+.curriculoV .negrilla {
+    color: #0D6EFD;
+}
+
+#IDtext {
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+#IDtext:hover {
+
+    font-size: 26px;
+}
+
+
+
+/*cuando este en ID col en hover quiero que se cambio el color de UD buttton a ese*/
+#IDCOL:hover #IDIMG {
+    opacity: 1;
+    transform: rotate(360deg);
+    height: 60%;
+    width: 60%;
+    box-shadow: 0px 15px 30px rgb(77 86 222/30%);
+}
+
+#IDCOL:hover #IDBUTTON {
+    rotate: -360deg;
+    transition: all 0.8s;
+    background: #0D6EFD;
+
+}
+
+
+
+.curriculoV .col-img .btn a {
+    text-decoration: none;
+    color: #fff;
+}
 
 /*En todas las clases navbar va a editar todas las que tengan navbar_link*/
 .navbar .nav-link {
@@ -300,9 +374,119 @@ section {
     transform: scale(1.5);
 }
 
-.services .col-lg-3 .col-botton .btn:hover {
-    background: #0D6EFD;
+.services .col-lg-3 .accordion {
+    background: none;
+    padding-top: 5px;
+
+}
+
+#elementostyle {
+    color: #00a3f4;
+    rotate: 180deg;
+    padding: 0;
+    transition: all 1s;
+}
+
+
+
+.services .col-lg-3 .accordion .card {
+    background: #fff;
+    border-top: 4px solid #7ad7ff;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.services .col-lg-3 .accordion .card-header {
+
+    background: #fff;
+    width: 80%;
+    overflow: hidden;
+    transition: all 0.3s;
+    margin-bottom: -1px;
+}
+
+#headingOne:hover #listone {
+    padding-top: 20px;
+}
+
+
+
+.services .col-lg-3 .accordion .card .card-header .btn {
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0;
+    background-color: #00a3f4;
     color: #fff;
+    font-size: 16px;
+    opacity: 1;
+    height: 20px;
+    width: 100%;
+    transition: all 0.3s;
+    font-size: 12px;
+}
+
+.services .col-lg-3 .accordion .card .card-header .btn:hover {
+    background: #fff;
+    font-size: 14px;
+    height: 40px;
+    color: #003298;
+}
+
+
+.services .col-lg-3 .accordion .card .card-body {
+    text-decoration: none;
+    padding-top: 1px;
+    color: #000000;
+    font-size: 14px;
+    background: #fff;
+    margin-top: 1px;
+    
+    
+}
+
+.services .col-lg-3 .accordion .card .card-body a {
+    transition: all 0.7s;
+    color: #000000;
+    width: 100%;
+    
+
+}
+
+.services .col-lg-3 .accordion .card .card-body a:hover {
+    text-decoration: none;
+    color: #0078ce;
+    transition: all 0.2s;
+}
+
+#ICONS {
+    transition: all 0.6s;
+}
+
+#TEXT:hover+#ICONS {
+    color: #0b00a3;
+
+}
+
+.accordeonPosition {
+    margin-top: auto;
+}
+
+.services .col-lg-3 .accordion .card .card-body li {
+    list-style: none;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.services .col-lg-3 .accordion .card .card-body i {
+    transition: all 0.5s;
+    color: #00a3f4;
+}
+
+
+.services .col-lg-3 .col-botton .btn:hover {
+    background: rgb(51, 116, 255);
+    color: #ffffff;
     font-size: 13px;
 }
 
@@ -370,22 +554,21 @@ section {
     margin-top: 20px;
     padding: 10px 10px 10px 10px;
     transform: scale(1.9);
-}
-
-.portfolio .portfolio-item .portfolio-img {
-    /*esta es para que las etiquetas de la imajen cuando se relaice el zoom no resalgan*/
     overflow: hidden;
 }
 
+
+
 .portfolio .portfolio-item .portfolio-info {
     opacity: 0.7;
-    position: absolute;
+    position: relative;
     left: 12px;
     bottom: 0;
     right: 12px;
     transition: all 0.3s;
     background: rgba(0 0 26/ 100%);
     padding: 10px 15px;
+    z-index: 1000;
 
 }
 
@@ -413,6 +596,7 @@ section {
     top: calc(50%-28);
     color: #fff;
     transition: 0.4s;
+    padding-right: 10px;
 }
 
 .portfolio .portfolio-item .portfolio-info .details-link {
@@ -532,16 +716,17 @@ footer a {
 
 footer a:hover {
     color: #470296;
-    
+
 }
 
-footer li{
+footer li {
     transition: all 0.2s;
 }
 
-footer li:hover{
+footer li:hover {
     padding-bottom: 5px;
 }
+
 footer p {
     text-decoration: none;
     color: #000000;
@@ -682,6 +867,21 @@ footer .social:hover {
 @import url("https://fonts.googleapis.com/css?family=Montserrat:700");
 
 
+.curriculoV .cube {
+    position: relative;
+    top: 100%;
+    left: 100%;
+    width: 2px;
+    height: 2px;
+    border: solid 1px #003298;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    -webkit-animation: cube 8s ease-in forwards infinite;
+    animation: cube 8s ease-in forwards infinite;
+    background-color: #fff700;
+}
 
 .Barrafinal .cube {
     position: relative;

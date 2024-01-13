@@ -9,10 +9,16 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="CSS/magnific-popup.css">
     <link rel="stylesheet" href="CSS/all.min.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
 </head>
 
@@ -48,6 +54,9 @@
                         <a class="nav-link" href="#services">Proyectos</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#Vitae">C.Vitae</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Mas información</a>
                     </li>
                 </ul>
@@ -74,7 +83,7 @@
                         <p class="fw-light">Conoce diversos productos de software desarrollados en diferentes lenguajes
                             de programación e hipertexto,
                             bases de datos, algoritmos de inteligencia artificial y visión computarizada.</p>
-                        <a class="btn btn-primary btn-sm" href="#portfolio">Mis trabajos
+                        <a class="btn btn-primary btn-sm" href="#services">Mis trabajos
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-arrow-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -152,7 +161,7 @@
 
                 </div>
 
-                <div class="col-lg-6  mt-4 mt-lg-0">
+                <div class="col-lg-6  mt-4 mt-lg-0  mt-0">
                     <div class="d-flex member">
                         <div class="pic"><img src="IMG/Escritorio.jpg" class="img-fluid pic" alt=""></div>
                         <div class="ps-2">
@@ -183,6 +192,55 @@
 
     </section>
 
+    <section id="curriculoV " class="curriculoV d-flex">
+        <div class="container">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="col section-title">
+                <h2 id="Vitae">Curriculum vitae </h2>
+            </div>
+            <div class="row">
+                <div class="col justify-content-center d-flex align-items-center">
+                    <!--dysplay flex para dejar cambiar las propiedades en CSS-->
+
+                    <p id="IDtext" class="text-center ">Descubre más <strong>información de contacto</strong> e
+                        <strong>información básica</strong> de estudio y experiencia en desarrollo de proyectos
+                        descargando el <strong class="negrilla">curriculo vitae</strong>.
+                    </p>
+
+                </div>
+
+
+
+                <div id="IDCOL" class="col text-center ">
+                    <div id="Vitae" class="col-img filter-Certific  position-relative">
+                        <!--Descargar imagen con onclick="descargarImagen()" para ejecutar un codigo en JS-->
+                        <img id="IDIMG" src="IMG/CV.png" class="img-fluid rounded mx-auto" alt="">
+                        <div>
+                            <div id="IDBUTTON" class="btn btn-dark position-absolute top-50 start-50 translate-middle">
+                                <a onclick="descargarImagen()" class=""><strong>Descargar</strong>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-cloud-arrow-down-fill " viewBox="0 0 16 16" color="#fff">
+                                        <path
+                                            d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
     <!--Seccion de servicios-->
     <!-- Optional JavaScript; choose one of the two! -->
     <section id="services" class="services section-bg">
@@ -196,37 +254,76 @@
             <div class="row">
 
                 <div id="IA" class="col-lg-3 col-md-6  mt-0 d-flex align-items-stretch">
-                    <div id="ICONBOX-TRANSITION" class="icon-box mb-3">
+                    <div id="ICONBOX-TRANSITION" class="icon-box mb-3" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
                         <a><img id="IMG-TRASITION" src="IMG/ojo.png" alt="" class="img-arr m-3">
                         </a>
                         <div id="COLBTN-TRANSITION" class="col-botton">
-                            <a id="BTN-TRASITION" class="btn btn-primary" href="#" role="button">¡Vamos allá!</a>
+                            <a id="BTN-TRASITION" class="btn btn-primary" href="#BTNia" role="button">¡Vamos allá!</a>
                         </div>
-                        <h4>Inteligencia Artificial y visión computacional</h4>
+                        <h4 id="BTNia">Inteligencia Artificial y visión computacional</h4>
                         <p>Trabajos realizados en Python con diferentes librerías de procesamiento de imágenes,
                             transformación y tratamiento de datos, IA y demás librerías, dando soluciones para algunas
                             problemáticas y planteando cada uno de estos productos como parte de enseñanza y
                             entendimiento de cada una de las librerías.
                         </p>
-                        <div class="col">
+                        <div id="" class="col mb-5">
                             <img src="IMG/python.png" class="img-fluid" alt="">
                             <div class="row"></div>
                             <img src="IMG/tensorflow.svg" class="img-fluid" alt="">
                             <img src="IMG/opencv.svg" class="img-fluid" alt="">
                             <img src="IMG/keras.svg" class="img-fluid" alt="">
-
                         </div>
+                        <div class="col position-absolute bottom-0 start-50 translate-middle-x  mb-4">
+                            <div class="accordion align-content-center justify-content-center" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse"
+                                                data-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne" onclick="aplicarStyle1(); aplicarStyle2();">
+                                                <i id="icono" class="bi bi-arrow-down-short rotar"></i>
+                                                Proyectos
+                                                <i id="icono" class="bi bi-arrow-down-short rotar"></i>
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <li id="listone" class="list">
+                                                <a id="TEXT"
+                                                    href="https://github.com/AlexNocua/Identificacion-de-Monedas-con-Open-CV">Reconocimiento
+                                                    de
+                                                    Monedas con OpenCV. </a>
+                                                <i id="ICONS" class="bi bi-arrow-right-circle-fill"></i>
+                                            </li>
+                                            <li id="listone">
+                                                <a id="TEXT"
+                                                    href="https://github.com/AlexNocua/CNN-con-tensorflow-y-keras-para-OCR">CNN
+                                                    para reconocimiento de caracteres. </a><i id="ICONS"
+                                                    class="bi bi-arrow-right-circle-fill"></i>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
 
                 <div id="aplicaciones" class="col-lg-3 col-md-6  mt-0 d-flex align-items-stretch">
-                    <div id="ICONBOX-TRANSITION" class="icon-box mb-3">
+                    <div id="ICONBOX-TRANSITION" class="icon-box mb-3" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="true" aria-controls="collapseTwo">
                         <a><img id="IMG-TRASITION" src="IMG/desarrollo-de-aplicaciones.png" alt="" class="img-arr m-3">
                         </a>
                         <div id="COLBTN-TRANSITION" class="col-botton">
-                            <a id="BTN-TRASITION" class="btn btn-primary" href="#" role="button">¡Vamos allá!</a>
+                            <a id="BTN-TRASITION" class="btn btn-primary" href="#BTNapp" role="button">¡Vamos allá!</a>
                         </div>
-                        <h4>Aplicaciones</h4>
+                        <h4 id="BTNapp">Aplicaciones</h4>
                         <p>Trabajos enfocados en desarrollo de aplicaciones móviles Android y de escritorio con
                             lenguajes de Java y .Net, buscando dar productos funcionales para el aprendizaje y la
                             interacción de los diferentes lenguajes.
@@ -236,20 +333,61 @@
                             <img src="IMG/java.png" class="img-fluid" alt="">
                             <img src="IMG/visual-basico.png" class="img-fluid" alt="">
                         </div>
+                        <div class="col position-absolute bottom-0 start-50 translate-middle-x mb-4">
+                            <div class="accordion align-content-center justify-content-center" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse"
+                                                data-target="#collapseTwo" aria-expanded="true"
+                                                aria-controls="collapseTwo" onclick="aplicarStyle1(); aplicarStyle2();">
+                                                <i id="icono" class="bi bi-arrow-down-short rotar"></i>
+                                                Proyectos
+                                                <i id="icono" class="bi bi-arrow-down-short rotar"></i>
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <li id="listone" class="list">
+                                                <a id="TEXT"
+                                                    href="https://github.com/AlexNocua/Aplicacion-Movil-Forraje-en-Finca-">Aplicación
+                                                    Android “Forraje en Finca”. </a>
+                                                <i id="ICONS" class="bi bi-arrow-right-circle-fill"></i>
+                                            </li>
+                                            <li id="listone">
+                                                <a id="TEXT"
+                                                    href="https://github.com/AlexNocua/Aplicacion-de-escritorio-Sistema-Operativo-Game-macro-">Proyecto
+                                                    de escritorio Windows “Game Macro”. </a><i id="ICONS"
+                                                    class="bi bi-arrow-right-circle-fill"></i>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
                 <div id="frontend" class="col-lg-3 col-md-6  mt-0 d-flex align-items-stretch">
-                    <div id="ICONBOX-TRANSITION" class="icon-box mb-3">
+                    <div id="ICONBOX-TRANSITION" class="icon-box mb-3" data-toggle="collapse"
+                        data-target="#collapseTree" aria-expanded="true" aria-controls="collapseTree">
                         <a><img id="IMG-TRASITION" src="IMG/front.png" alt="" class="img-arr m-3">
                         </a>
                         <div id="COLBTN-TRANSITION" class="col-botton">
-                            <a id="BTN-TRASITION" class="btn btn-primary" href="#" role="button">¡Vamos allá!</a>
+                            <a id="BTN-TRASITION" class="btn btn-primary" href="#BTNfront" role="button">¡Vamos
+                                allá!</a>
                         </div>
-                        <h4>Frontend</h4>
-                        <p>Trabajos en desarrollo de páginas web para muestra de información, implementando diferentes
-                            framework que mejoren el desarrollo y optimización de los lenguajes de hipertexto, también
-                            diferentes interfases realizadas en con ayuda de herramientas para conseguir una interacción
+                        <h4 id="BTNfront">Frontend</h4>
+                        <p>Trabajos en desarrollo de páginas web para muestra de información, implementando
+                            diferentes
+                            framework que mejoren el desarrollo y optimización de los lenguajes de hipertexto,
+                            también
+                            diferentes interfases realizadas en con ayuda de herramientas para conseguir una
+                            interacción
                             con el usuario mas agradable.
                         </p>
                         <div><img src="IMG/html-5.png" class="img-fluid" alt="">
@@ -258,20 +396,61 @@
                             <img src="IMG/bootstrap-logo-shadow.png" class="img-fluid" alt="">
                             <img src="IMG/jquery-icon-1009x1024-21vxaog3.png" class="img-fluid" alt="">
                         </div>
+                        <div class="col position-absolute bottom-0 start-50 translate-middle-x mb-4">
+                            <div class="accordion align-content-center justify-content-center" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse"
+                                                data-target="#collapseTree" aria-expanded="true"
+                                                aria-controls="collapseTree"
+                                                onclick="aplicarStyle1(); aplicarStyle2();">
+                                                <i id="icono" class="bi bi-arrow-down-short rotar"></i>
+                                                Proyectos
+                                                <i id="icono" class="bi bi-arrow-down-short rotar"></i>
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseTree" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <li id="listone" class="list">
+                                                <a id="TEXT"
+                                                    href="https://github.com/ManuelAnony/Sistema_de_Gestion">Pagina Web
+                                                    "Olimpiadas matematicas UDEC". </a>
+                                                <i id="ICONS" class="bi bi-arrow-right-circle-fill"></i>
+                                            </li>
+                                            <li id="listone">
+                                                <a id="TEXT"
+                                                    href="https://www.figma.com/file/T3SJrOTsFVIK0xXBivIoR3/Untitled?type=design&node-id=0-1&mode=design&t=HDIk1bwMpUkfCusA-0">Versión
+                                                    de interfaz 2.0 de la aplicación “Forraje
+                                                    en Finca” en Figma. </a><i id="ICONS"
+                                                    class="bi bi-arrow-right-circle-fill"></i>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
                 <div id="backend" class="col-lg-3 col-md-6  mt-0 d-flex align-items-stretch">
-                    <div id="ICONBOX-TRANSITION" class="icon-box mb-3">
+                    <div id="ICONBOX-TRANSITION" class="icon-box mb-3" data-toggle="collapse"
+                        data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                         <a><img id="IMG-TRASITION" src="IMG/backend.png" alt="" class="img-arr m-3">
                         </a>
                         <div id="COLBTN-TRANSITION" class="col-botton">
-                            <a id="BTN-TRASITION" class="btn btn-primary" href="#" role="button">¡Vamos allá!</a>
+                            <a id="BTN-TRASITION" class="btn btn-primary" href="#BTNback" role="button">¡Vamos allá!</a>
                         </div>
-                        <h4>Backend</h4>
-                        <p>Trabajos en sistemas de gerenciamiento utilizando frameworks que permitan el uso de patrones
+                        <h4 id="BTNback">Backend</h4>
+                        <p>Trabajos en sistemas de gerenciamiento utilizando frameworks que permitan el uso de
+                            patrones
                             como ORM, también optimizando y mejorando el propio relacionamiento entre clases.
-                            Sistemas básicos de inserción de datos para bases de datos NoSQL y manipulación de estos por
+                            Sistemas básicos de inserción de datos para bases de datos NoSQL y manipulación de estos
+                            por
                             medio del CRUD para bases de datos SQL.
 
 
@@ -288,10 +467,50 @@
                                 <img src="IMG/python.png" class="img-fluid" alt="">
                                 <img src="IMG/mongodb_plain_wordmark_logo_icon_146423.png" class="img-fluidk" alt="">
                             </div>
+                            <div class="col position-absolute bottom-0 start-50 translate-middle-x mb-4">
+                                <div class="accordion align-content-center justify-content-center"
+                                    id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse"
+                                                    data-target="#collapseFour" aria-expanded="true"
+                                                    aria-controls="collapseFour"
+                                                    onclick="aplicarStyle1(); aplicarStyle2();">
+                                                    <i id="icono" class="bi bi-arrow-down-short rotar"></i>
+                                                    Proyectos
+                                                    <i id="icono" class="bi bi-arrow-down-short rotar"></i>
+                                                </button>
+                                            </h5>
+                                        </div>
+
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingOne"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <li id="listone" class="list">
+                                                    <a id="TEXT"
+                                                        href="https://github.com/AlexNocua/Lista-de-Tarefas-em-Python-e-MongoDB">Lista
+                                                        de Tareas con conexión a Mongo DB. </a>
+                                                    <i id="ICONS" class="bi bi-arrow-right-circle-fill"></i>
+                                                </li>
+                                                <li id="listone">
+                                                    <a id="TEXT"
+                                                        href="https://github.com/Velandia2022/PROJECTO-WEB-">Sistema de
+                                                        adopción de animales en java con
+                                                        spring boot. </a><i id="ICONS"
+                                                        class="bi bi-arrow-right-circle-fill"></i>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <!--modificacion-->
@@ -414,20 +633,21 @@
                 </div>
                 <div class="col-md-6 mt-3 mt-md-0">
                     <!--programacion en php-->
-                    <form action="projects.html">
+                    <form action="php/saveemail.php" method="POST">
                         <div class="mb-3">
-                            <label for="Nome" class="form-label"><strong>Nombre</strong></label>
-                            <input type="text" name="name" class="form-control" id="Nome" placeholder="Tu nombre">
+                            <label for="Nombre" class="form-label"><strong>Nombre</strong></label>
+                            <input type="text" name="name" class="form-control" id="Nombre" placeholder="Tu nombre"
+                                required>
                         </div>
                         <div class="mb-3">
-                            <label for="correo" class="form-label"><strong>Correo electronico</strong></label>
-                            <input type="text" name="email" class="form-control" id="correo"
-                                placeholder="tucorreo@...com">
+                            <label for="Correo" class="form-label"><strong>Correo electrónico</strong></label>
+                            <input type="email" name="email" class="form-control" id="Correo"
+                                placeholder="tucorreo@ejemplo.com" required>
                         </div>
                         <div class="mb-3">
                             <label for="Comentarios" class="form-label"><strong>Comentarios</strong></label>
-                            <textarea class="form-control" name="coments" id="Comentarios" rows="3"
-                                placeholder="Coméntame una idea, opinión, sugerencia…"></textarea>
+                            <textarea class="form-control" name="comments" id="Comentarios" rows="3"
+                                placeholder="Coméntame una idea, opinión, sugerencia…" required></textarea>
                         </div>
                         <div class="d-grid">
                             <button class="btn btn-primary" type="submit">Enviar</button>
@@ -559,6 +779,9 @@
 
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js "></script>
     <script src="JS/jquery.magnific-popup.min.js "></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="JS/script.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper 

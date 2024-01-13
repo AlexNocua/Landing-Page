@@ -52,7 +52,52 @@ $('.popup-image').magnificPopup({
 
 $("#navbarNav").on('show.bs.collapse', function () {
     $(".navbar").addClass("navbar-fixed");
-    $('a.nav-link, a.btn-custom').click(function(){
+    $('a.nav-link, a.btn-custom').click(function () {
         $("#navbarNav").collapse('hide');
     });
 });
+
+
+//descargar una imagen por id de la misma en html
+
+
+function descargarImagen() {
+    //  referencia a la imagen
+    var imagen = document.getElementById('IDIMG');
+
+    //elemento "a" para el enlace de descarga
+    var enlaceDescarga = document.createElement('a');
+
+    // enlace de descarga con la URL de la imagen
+    enlaceDescarga.href = imagen.src;
+
+    // Asigna un nombre de archivo para la descarga (puedes cambiarlo según tus necesidades)
+    enlaceDescarga.download = 'CV_AlexNocua.png';
+
+    // Simula un clic en el enlace para iniciar la descarga
+    enlaceDescarga.click();
+}
+
+function toggleAccordion(sectionId) {
+    var section = document.getElementById(sectionId);
+    var accordionItem = section.parentElement;
+
+    if (accordionItem.classList.contains('active')) {
+        accordionItem.classList.remove('active');
+    } else {
+        accordionItem.classList.add('active');
+    }
+}
+
+
+function aplicarStyle1() {
+    // Aplicar el primer estilo (rotación)
+    var icono = document.getElementById('icono');
+    icono.style.transform = "rotate(0deg)";
+  }
+
+  function aplicarStyle2() {
+    // Aplicar el segundo estilo (volver al estado original)
+    var icono = document.getElementById('icono');
+    icono.style.transform = "rotate(180deg)";
+  }

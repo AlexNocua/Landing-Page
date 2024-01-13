@@ -2,24 +2,31 @@
 
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
-$name = $POST['name'];
-$email = $POST['email'];
-$coments = $POST["coments"];
 
-$header = 'From: ' . $email . "\r\n"; // Agregué dos puntos después de 'From'
-$header .= "X-Mailer: PHP/" . phpversion() . "\r\n";
-$header .= "Mime-Version: 1.0 \r\n";
-$header .= "Content-Type: text/plain";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $comments = $_POST['comments'];
 
-$message = "Este mensaje fue enviado por: " . $name . "\r\n";
-$message .= "Su e-mail es: " . $email . "\r\n"; // Concatené las líneas usando '.='
-$message .= "Su comentario fue: " . $POST['coments'] . "\r\n";
-$message .= "Mensaje enviado el: " . date('d,m,Y', time());
+    $header = 'From: ' . $email . "\r\n";
+    $header .= "X-Mailer: PHP/" . phpversion() . "\r\n";
+    $header .= "Mime-Version: 1.0 \r\n";
+    $header .= "Content-Type: text/plain";
 
-$para = 'alex.nocua@alunos.ifsuldeminas.edu.br';
-$asunto = 'Comentarios de Landing Page';
+    $message = "Este mensaje fue enviado por: " . $name . "\r\n";
+    $message .= "Su e-mail es: " . $email . "\r\n";
+    $message .= "Su comentario fue: " . $comments . "\r\n";
+    $message .= "Mensaje enviado el: " . date('d,m,Y', time());
 
-@mail($para, $asunto, utf8_decode($message), $header);
+    $para = 'tudirecciondecorreo@example.com';
+    $asunto = 'Comentarios de Landing Page';
 
-header("Location: index.html");
+    if (mail($para, $asunto, $message, $header)) {
+        echo "Correo enviado exitosamente.";
+    } else {
+        echo "Error al enviar el correo. Por favor, intenta de nuevo más tarde.";
+    }
+} else {
+    echo "Acceso no permitido.";
+}
 ?>
