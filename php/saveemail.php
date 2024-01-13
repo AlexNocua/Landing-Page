@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message .= "Su comentario fue: " . $comments . "\r\n";
     $message .= "Mensaje enviado el: " . date('d,m,Y', time());
 
-    $para = 'tudirecciondecorreo@example.com';
+    $para = 'nocua68@gmail.com';
     $asunto = 'Comentarios de Landing Page';
 
     if (mail($para, $asunto, $message, $header)) {
