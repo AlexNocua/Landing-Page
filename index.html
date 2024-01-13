@@ -35,11 +35,12 @@
                 </div>
 
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-expanded="true" aria-controls="navbarNav">
+
                 <i class="bi bi-list"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav" aria-labelledby="headingOne">
                 <!--Margen Automativo con ms-auto, revisar la documentacion de bootstrap debido a los cambios en la sintaxis de las clases
                 me-lg-4  para que se aplique el margen solo en las pantallas mas grandes
                 py-3 es la cantidad de distancia que queremos que se despegue de la parte superior e inferio, todo esto esta en bootstrap-->
@@ -651,11 +652,13 @@
                         </div>
                         <div class="d-grid">
                             <!--Disabled para desabilitar el boton-->
-                            <button class="btn btn-primary" type="submit" disabled title="Aún no está en funcionamiento.">Enviar</button>
-                            <p class="text-center">Botón no habilitado, aún está en desarrollo para tratamiento de datos con Python – Futuramente... <br>
+                            <button class="btn btn-primary" type="submit" disabled
+                                title="Aún no está en funcionamiento.">Enviar</button>
+                            <p class="text-center">Botón no habilitado, aún está en desarrollo para tratamiento de datos
+                                con Python – Futuramente... <br>
                                 Comunícate por redes sociales.
-                            <i class="bi bi-emoji-laughing "></i>
-                            </p> 
+                                <i class="bi bi-emoji-laughing "></i>
+                            </p>
 
                         </div>
                     </form>
@@ -785,9 +788,7 @@
 
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js "></script>
     <script src="JS/jquery.magnific-popup.min.js "></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!--eliminacion de lonas que generan error en el isotope-->
     <script src="JS/script.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper 

@@ -146,6 +146,7 @@ nuestra transicion*/
 a.nav-link:hover {
     padding-bottom: 3px;
     border-bottom: 2px solid white;
+    color: #fff;
 }
 
 .btn-custom {
