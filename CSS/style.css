@@ -176,6 +176,7 @@ a.nav-link:hover {
 
 /*a.btn... si quisiera que se ajustara en todas las etiquetas que tengan la clase custom*/
 .btn-custom:hover {
+    text-decoration: none;
     color: white;
     background: #0D6EFD;
     border: 1.5px #fff;
