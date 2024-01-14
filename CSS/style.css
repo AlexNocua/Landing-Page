@@ -131,6 +131,20 @@ header {
     color: #fff;
 }
 
+
+.navbar .navbar-toggler {
+    border: 2px solid #fff;
+    transition: all 0.3s;
+    
+}
+
+
+.navbar .navbar-toggler:hover {
+    background:#77098b;
+    transform: scale(1.1);
+    transform:rotate(-360deg);
+}
+
 /*En todas las clases navbar va a editar todas las que tengan navbar_link*/
 .navbar .nav-link {
     color: white;
@@ -152,7 +166,7 @@ a.nav-link:hover {
 .btn-custom {
     border: 1.5px solid #fff;
     border-radius: 50px;
-    color: #fff;
+    color: #ffffff;
     background: none;
     padding: 8px 20px;
     font-weight: 500;
