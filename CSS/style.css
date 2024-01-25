@@ -135,14 +135,14 @@ header {
 .navbar .navbar-toggler {
     border: 2px solid #fff;
     transition: all 0.3s;
-    
+
 }
 
 
 .navbar .navbar-toggler:hover {
-    background:#77098b;
+    background: #77098b;
     transform: scale(1.1);
-    transform:rotate(-360deg);
+    transform: rotate(-360deg);
 }
 
 /*En todas las clases navbar va a editar todas las que tengan navbar_link*/
@@ -339,6 +339,7 @@ section {
     background: #fff;
     cursor: pointer;
     transition: 0.5s;
+    height: 700px;
 }
 
 .services .col-lg-3 {
@@ -560,6 +561,8 @@ section {
 .portfolio ul {
     padding-left: 0px;
 }
+
+
 
 .portfolio .portfolio-item .portfolio-img img {
     transition: all 0.6s;
